@@ -1,0 +1,8 @@
+---
+import { Icon } from "astro-icon";
+const { href, src } = Astro.props;
+---
+
+<a href={href}>
+    <Icon class="w-8 h-8 hover:(opacity-70)" pack="mdi" name={src} />
+</a>

@@ -1,0 +1,14 @@
+---
+import { PageRoute } from "src/def";
+import NavBarItem from "./NavBarItem.astro";
+const { routes } = Astro.props;
+---
+
+<div class="bg-cat-mantle rounded-full md:h-full <md:w-full md:my-auto <md:mx-auto p-2 flex md:flex-col <md:flex-row items-center">
+    {routes.map((route: PageRoute) => function() {
+        if(!route.icon) return;
+        return (
+            <NavBarItem href={route.path} src={route.icon}/>
+        )
+    })}
+</div>

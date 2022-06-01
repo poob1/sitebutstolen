@@ -1,0 +1,23 @@
+---
+import IndexLayout from "@layouts/IndexLayout.astro";
+
+const gifUrls = [
+    "//c.tenor.com/MA2rJEKr_IEAAAAC/milk-cat-car.gif",
+    "//c.tenor.com/AimptPv3QIsAAAAC/get-real-get-real-potaro.gif",
+    "//c.tenor.com/Rlj-7QD5YiQAAAAC/shower-duolingo.gif",
+    "//c.tenor.com/NGMujVjZ7IcAAAAd/hosting-mexico-registro-de-dominios-mexico.gif",
+    "//c.tenor.com/l3oHHAUd0rIAAAAC/squidward-tonight-glass-break.gif", 
+    "//media.discordapp.net/attachments/212810886027542528/905132631342071898/RDT_20211101_0830156527447195501962361.gif",
+    "//media.discordapp.net/attachments/824921608560181261/956458863178170388/IMG_8519.gif"
+];
+---
+
+<IndexLayout>
+	<div class="grid place-items-center text-center h-full">
+        <div class="grid place-items-center text-center">
+            <h1 class="text-8xl mb-4">Oops!</h1>
+            <p class="text-2xl">That route is invalid.</p>
+            <img class="mx-auto mt-4 rounded-lg" src={gifUrls[Math.floor(Math.random() * gifUrls.length)]}/>
+        </div>
+	</div>
+</IndexLayout>

@@ -1,0 +1,28 @@
+---
+import NavBar from "@components/NavBar.astro";
+import "virtual:windi.css";
+
+import routes from "../routes.json";
+
+const { title, class: className } = Astro.props;
+---
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <slot name="head" />
+</head>
+
+<body class={className}>
+    <div class="flex md:flex-row <md:flex-col-reverse h-[98vh]">
+        <NavBar {routes}/>
+        <div class="md:w-screen h-[98vh] px-4">
+            <slot />
+        </div>
+    </div>
+</body>
+
+</html>
