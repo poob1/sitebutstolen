@@ -17,6 +17,7 @@
     "windicss": "^3.5.4"
   },
   "dependencies": {
-    "astro-icon": "^0.7.1"
+    "astro-icon": "^0.7.1",
+    "crossani": "^1.1.1"
   }
 }

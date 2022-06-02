@@ -1,15 +1,18 @@
 ---
+import NavBar from "@components/NavBar.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import routes from "../routes.json";
 ---
 
-<BaseLayout title="Beef's website" class="bg-cat-base text-cat-text p-2">
+<BaseLayout title="Beef's website" class="bg-cat-base text-cat-text lg:h-screen w-screen p-4 flex lg:flex-row <lg:flex-col">
     <link slot="head" rel="preconnect" href="https://fonts.googleapis.com">
     <link slot="head" rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link slot="head"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <slot />
+    <NavBar {routes} />
+    <span class="flex flex-col w-full lg:ml-4 <lg:mt-4"><slot /></span>
 
     <style slot="head" is:inline>
         * {

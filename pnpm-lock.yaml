@@ -5,12 +5,14 @@ specifiers:
   '@types/node': ^17.0.38
   astro: ^1.0.0-beta.38
   astro-icon: ^0.7.1
+  crossani: ^1.1.1
   solid-js: ^1.3.6
   vite-plugin-windicss: ^1.8.4
   windicss: ^3.5.4
 
 dependencies:
   astro-icon: 0.7.1
+  crossani: 1.1.1
 
 devDependencies:
   '@astrojs/solid-js': 0.1.3_solid-js@1.4.3
@@ -917,6 +919,10 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /crossani/1.1.1:
+    resolution: {integrity: sha512-Xq3xa34gz6WqfxfLiybM/hauRvjmeYlDh0ClhHAJs9Ryp03Aap74e0zkB/mu3s4alNSG1RavNHuLa3vAJwcluQ==}
+    dev: false
 
   /css-select/4.3.0:
     resolution: {integrity: sha512-wPpOYtnsVontu2mODhA19JrqWxNsfdatRKd64kmpRbQgh1KtItko5sTnEpPdpSaJszTOhEMlF/RPz28qj4HqhQ==}
