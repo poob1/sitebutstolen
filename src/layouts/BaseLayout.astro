@@ -1,20 +1,35 @@
 ---
-import "virtual:windi.css";
+import "unocss-hmr-fix";
+import "@unocss/reset/tailwind.css";
+import routes from "../routes.json";
+import NavBar from "../components/NavBar.astro";
 
-const { title, class: className } = Astro.props;
+export interface Props {
+	title: string;
+    class?: string;
+}
 ---
 
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Beef's website">
+        <meta property="og:description" content="Hello world! I'm Beef. Welcome to my site!">
+		<title>{Astro.props.title ?? Astro.props.content.title} - Beef's website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        >
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
-    <slot name="head" />
-</head>
-
-<body class={className}>
-    <slot />
-</body>
-
+        <slot name="head" />
+	</head>
+	<body class="font-inter bg-base text-text flex w-screen h-screen md:(flex-row) <md:(flex-col)">
+        <NavBar routes={routes} />
+		<span class="p-4 w-screen"><slot /></span>
+	</body>
 </html>

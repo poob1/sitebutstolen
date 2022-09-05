@@ -1,8 +1,8 @@
 ---
-import IndexLayout from "@layouts/IndexLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 
 const gifUrls = [
-    "//c.tenor.com/MA2rJEKr_IEAAAAC/milk-cat-car.gif",
+    "//c.tenor.com/MA2rJEKr_IEAAAAC/milk-car.gif",
     "//c.tenor.com/AimptPv3QIsAAAAC/get-real-get-real-potaro.gif",
     "//c.tenor.com/Rlj-7QD5YiQAAAAC/shower-duolingo.gif",
     "//c.tenor.com/NGMujVjZ7IcAAAAd/hosting-mexico-registro-de-dominios-mexico.gif",
@@ -12,12 +12,12 @@ const gifUrls = [
 ];
 ---
 
-<IndexLayout>
+<BaseLayout title="404">
 	<div class="grid place-items-center text-center h-full">
         <div class="grid place-items-center text-center">
-            <h1 class="text-8xl mb-4">Oops!</h1>
+            <h1 class="text-8xl! mb-4">Oops!</h1>
             <p class="text-2xl">That route is invalid.</p>
             <img class="mx-auto mt-4 rounded-lg" src={gifUrls[Math.floor(Math.random() * gifUrls.length)]}/>
         </div>
 	</div>
-</IndexLayout>
+</BaseLayout>

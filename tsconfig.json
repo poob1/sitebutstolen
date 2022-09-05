@@ -18,6 +18,7 @@
             "@res/*": ["src/res/*"],
         },
         // Add type definitions for our Vite runtime.
-        "types": ["vite/client", "@types/node"]
+        "types": ["vite/client", "@types/node"],
+        "allowSyntheticDefaultImports": true
     }
 }
