@@ -12,10 +12,9 @@
         "isolatedModules": true,
         // Module aliases
         "paths": {
-            // Generic paths
-            "@components/*": ["src/components/*"],
-            "@layouts/*": ["src/layouts/*"],
-            "@res/*": ["src/res/*"],
+            "@/*": ["./src/*"],
+            "@components/*": ["./src/components/*"],
+            "@layouts/*": ["./src/layouts/*"]
         },
         // Add type definitions for our Vite runtime.
         "types": ["vite/client", "@types/node"],
