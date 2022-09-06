@@ -28,8 +28,8 @@ export interface Props {
 
         <slot name="head" />
 	</head>
-	<body class="font-inter bg-base text-text flex w-screen h-screen md:(flex-row) <md:(flex-col)">
+	<body class="font-inter bg-base text-text flex w-screen h-screen md:(flex-row) lt-md:(flex-col)">
         <NavBar routes={routes} />
-		<span class="p-4 w-screen"><slot /></span>
+		<span class="p-4 w-screen overflow-y-auto"><slot /></span>
 	</body>
 </html>
