@@ -7,8 +7,14 @@ export interface Props {
 }
 
 const { href, src } = Astro.props;
+
+const currentPath = Astro.url.pathname;
+const fixedPath =
+  currentPath.length > 1 && currentPath.endsWith("/")
+    ? currentPath.slice(0, -1)
+    : currentPath;
 ---
 
 <a href={href}>
-    <Icon class="w-8 h-8 hover:(opacity-70)" pack="mdi" name={src} />
+    <Icon class={`transition-opacity w-10 h-10 hover:(opacity-50) ${fixedPath === href ? "text-peach!" : ""}`} pack="mdi" name={src} />
 </a>

@@ -1,13 +1,9 @@
 ---
-import "unocss-hmr-fix";
-
 export interface Props {
-    width?: string;
-    height?: string;
     center?: boolean;
 }
 
-const { width, height, center } = Astro.props;
+const { center } = Astro.props;
 ---
 
-<img class={center ? "self-center" : ""} width={width} height={height} src="/logo.png" />
+<img class={`lt-md:(w-32 h-32) ${center ? "self-center" : ""}`} src="/logo.png" />

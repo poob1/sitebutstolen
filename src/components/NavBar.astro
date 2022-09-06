@@ -9,7 +9,7 @@ export interface Props {
 const { routes } = Astro.props;
 ---
 
-<div class="bg-mantle gap-2 p-2 flex md:(flex-col) lt-md:(flex-row)">
+<div class="bg-mantle gap-2 p-2 flex md:(flex-col) lt-md:(flex-row sticky)">
     {routes.map((route: PageRoute) => function() {
         if(!route.icon) return;
         return (

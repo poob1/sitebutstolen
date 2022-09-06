@@ -30,6 +30,8 @@ export interface Props {
 	</head>
 	<body class="font-inter bg-base text-text flex w-screen h-screen md:(flex-row) lt-md:(flex-col)">
         <NavBar routes={routes} />
-		<span class="p-4 w-screen overflow-y-auto"><slot /></span>
+		<span class="p-4 h-screen w-screen overflow-y-auto scrollbar scrollbar-rounded scrollbar-track-color-mantle scrollbar-thumb-color-crust scrollbar-w-2">
+            <slot />
+        </span>
 	</body>
 </html>
