@@ -3,7 +3,7 @@ import ArticleCard from "@/components/ArticleCard.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { Article } from "@types";
 
-export const articles = await Astro.glob<Article>("./*.md");
+const articles = await Astro.glob<Article>("./*.md");
 ---
 
 <BaseLayout title="Articles">
