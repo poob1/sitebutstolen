@@ -1,0 +1,32 @@
+---
+import { Article } from "@types";
+import { Icon } from "astro-icon";
+
+export interface Props {
+    article: Article;
+    href?: string;
+}
+
+const { title, description, date, tags } = Astro.props.article;
+const { href } = Astro.props;
+---
+
+<a class="text-text! hover:(text-text!)" href={href}>
+    <div class={`transition-colors flex flex-col gap-2 bg-mantle p-4 rounded-lg border-2 border-transparent ${href ? "hover:(border-flamingo)" : ""}`}>
+        <div class="flex flex-row p-[0.2rem] gap-1 whitespace-nowrap overflow-x-auto scrollbar scrollbar-rounded scrollbar-h-1 scrollbar-track-color-mantle scrollbar-thumb-color-crust">
+            {tags.map((tag: string) => function() {
+                return (
+                    <div class="bg-base rounded-md p-2">{tag}</div>
+                )
+            })}
+        </div>
+        <div>
+            <h1>{title}</h1>
+            <p>{description}</p>
+        </div>
+        <div class="flex flex-row gap-1 items-center">
+            <Icon class="w-4 h-4" pack="ic" name="baseline-access-time" />
+            <span>{new Date(date).toISOString().substring(0, 10)}</span>
+        </div>
+    </div>
+</a>

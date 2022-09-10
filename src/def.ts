@@ -7,7 +7,8 @@ export type PageRoute = Route & {
     icon?: string;
 }
 
-export type ArticleRoute = Route & {
+export interface Article {
+    title: string;
     description: string;
     date: Date;
     tags: string[];

@@ -2,11 +2,16 @@
     {
         "name": "Home",
         "path": "/",
-        "icon": "home"
+        "icon": "round-home"
     },
     {
         "name": "About",
         "path": "/about",
-        "icon": "person"
+        "icon": "round-person"
+    },
+    {
+        "name": "Articles",
+        "path": "/articles",
+        "icon": "round-article"
     }
 ]
