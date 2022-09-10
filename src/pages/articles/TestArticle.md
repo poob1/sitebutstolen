@@ -1,5 +1,5 @@
 ---
-title: Test Article of Doom
+title: "Test Article of Doom"
 description: "Muhahaha! A test article!"
 date: "2022-09-07"
 tags: ["test", "testing", "hi this is a reaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaally long tag"]
