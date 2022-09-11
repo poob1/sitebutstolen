@@ -17,6 +17,6 @@ const article = articles.find((i: MarkdownInstance<Article>) => i.frontmatter.ti
 <BaseLayout title={title}>
 	<main class="h-full flex flex-col gap-2">
         <ArticleCard article={article.frontmatter} />
-        <slot />
+        <span class="pb-4"><slot /></span>
 	</main>
 </BaseLayout>
