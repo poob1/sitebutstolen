@@ -12,7 +12,7 @@ export default defineConfig({
                 }
 
                 a {
-                    transition: color 0.2s ease-in-out;
+                    transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1);
                     color: ${theme.colors.yellow} !important;
                     text-decoration: unset !important;
                 }
