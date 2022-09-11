@@ -43,6 +43,13 @@ export default defineConfig({
                     font-weight: 400 !important;
                     margin-top: 0.25rem !important;
                 }
+
+                code {
+                    background-color: ${theme.colors.mantle};
+                    border-radius: 0.2rem;
+                    padding: 0.1rem;
+                    font-family: ${theme.fontFamily.mono} !important;
+                }
             `
         }
     ],
@@ -52,6 +59,7 @@ export default defineConfig({
     theme: {
         fontFamily: {
             inter: "Inter",
+            mono: "JetBrains Mono"
         },
         colors: {
             ...catpuccin,
