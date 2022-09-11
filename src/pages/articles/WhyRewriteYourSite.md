@@ -40,7 +40,7 @@ In this iteration, I (at the time) thought I had *perfected* my website. Oh, how
 
 ## Version 6
 
-The version you are looking at! I am very proud of it, as it uses an amazing tech stack consisting of Astro, UnoCSS and Vite. The styling makes me happy, [Catppuccin](//github.com/catppuccin) is very nice. I've said this with every iteration but I truly believe that Version 6 can be maintainable into the future, and should stop me from rewriting again. <sub>No promises, though.</sub>
+The version you are looking at! I am very proud of it, as it uses an amazing tech stack consisting of Astro, UnoCSS and Vite. The styling makes me happy, [Catppuccin](//github.com/catppuccin) is very nice. I've said this with every iteration but I truly believe that Version 6 can be maintainable into the future, and should stop me from rewriting again. <sub>No promises, though.</sub> Here is the [first commit](//site-3rajshmt5-beefers.vercel.app/) and the [latest commit](//site-git-v6-beefers.vercel.app/).
 
 ## TODO
 
