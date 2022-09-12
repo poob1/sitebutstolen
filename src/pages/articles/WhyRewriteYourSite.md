@@ -42,12 +42,20 @@ In this iteration, I (at the time) thought I had *perfected* my website. Oh, how
 
 The version you are looking at! I am very proud of it, as it uses an amazing tech stack consisting of Astro, UnoCSS and Vite. The styling makes me happy, [Catppuccin](//github.com/catppuccin) is very nice. I've said this with every iteration but I truly believe that Version 6 can be maintainable into the future, and should stop me from rewriting again. <sub>No promises, though.</sub> Here is the [first commit](//site-3rajshmt5-beefers.vercel.app/) and the [latest commit](//site-git-v6-beefers.vercel.app/).
 
-## TODO
+## Justification
 
-* Write justification
+The reason I have chosen to rewrite my website so many times is due to this simple reason - I am a perfectionist. I always find a new flaw in my site, or a new framework that would fit my site better than whatever it is currently using. Thus, I run the dreaded command:
 
-| Version | First commit/source | Last/Latest commit | Summary |
-| ------- | ------------------- | ------------------ | ------- |
+```sh
+git switch --orphan <version>
+```
+
+And get on my way, coding a new version of this website.
+
+## Version table
+
+| Version | First commit | Latest commit | Summary |
+| ------- | ------------ | ------------- | ------- |
 | Legacy  | [Here](//github.com/Beefers/site/tree/legacy) | See source | HTML/CSS/JS, first dive into webdev. |
 | Version 1 | [Here](//rem-my-github-io-kp5pssc3h-rem-my.vercel.app/) | [Here](//site-git-v1-beefers.vercel.app/) | Direct port of Legacy to SvelteKit. |
 | Version 2 | [Here](//site-9zgoiir3s-rem-my.vercel.app/) | [Here](//site-git-v2-beefers.vercel.app/) | Explored "advanced" CSS styling, written with SvelteKit. |

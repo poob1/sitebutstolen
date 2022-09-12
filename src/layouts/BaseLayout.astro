@@ -8,6 +8,8 @@ export interface Props {
 	title: string;
     class?: string;
 }
+
+const title = Astro.props.title ?? Astro.props.content.title;
 ---
 
 <!DOCTYPE html>
@@ -16,9 +18,11 @@ export interface Props {
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
         <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Beef's website">
+        <meta property="og:title" content={`${title} - Beef's website`}>
+        <meta property="og:image" content="/logo.png" />
         <meta property="og:description" content="Hello world! I'm Beef. Welcome to my site!">
-		<title>{Astro.props.title ?? Astro.props.content.title} - Beef's website</title>
+        <meta name="theme-color" content="#f74242" />
+		<title>{title} - Beef's website</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link 

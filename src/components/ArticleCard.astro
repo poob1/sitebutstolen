@@ -11,7 +11,7 @@ const { title, description, date, tags } = Astro.props.article;
 const { href } = Astro.props;
 ---
 
-<a class="text-text! hover:(text-text!)" href={href}>
+<a class="transition-unset! text-text! hover:(text-text!)" href={href}>
     <div class={`transition-colors flex flex-col gap-2 bg-mantle p-4 rounded-lg border-2 border-transparent ${href ? "hover:(border-flamingo)" : ""}`}>
         <div class="flex flex-row p-[0.2rem] gap-1 whitespace-nowrap overflow-x-auto scrollbar scrollbar-rounded scrollbar-h-1 scrollbar-track-color-mantle scrollbar-thumb-color-crust">
             {tags.map((tag: string) => function() {

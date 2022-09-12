@@ -6,9 +6,25 @@ export default defineConfig({
     preflights: [
         {
             getCSS: ({ theme }) => `
+                :root {
+                    --astro-code-color-text: ${theme.colors.text};
+                    --astro-code-color-background: ${theme.colors.mantle};
+                    --astro-code-token-constant: ${theme.colors.yellow};
+                    --astro-code-token-string: ${theme.colors.green};
+                    --astro-code-token-comment: ${theme.colors["subtext-primary"]};
+                    --astro-code-token-keyword: ${theme.colors.peach};
+                    --astro-code-token-parameter: ${theme.colors.lavender};
+                    --astro-code-token-function: ${theme.colors.pink};
+                    --astro-code-token-string-expression: ${theme.colors.mauve};
+                    --astro-code-token-punctuation: ${theme.colors.blue};
+                    --astro-code-token-link: ${theme.colors.yellow};
+                }
+
                 .astro-code {
                     border-radius: 0.375rem;
                     padding: 0.5rem;
+                    margin-top: 0.25rem;
+                    margin-bottom: 0.25rem;
                 }
 
                 a {
@@ -52,16 +68,17 @@ export default defineConfig({
                 }
 
                 table,thead {
+                    width: 100%;
                     border-collapse: unset !important;
                     background-color: ${theme.colors.crust};
-                    padding: 0.25rem !important;
                     border-radius: 0.375rem;
                     text-align: center;
+                    align-self: center;
                 }
 
                 th,td,tr {
                     background-color: ${theme.colors.mantle};
-                    padding: 0.5rem;
+                    padding: 0.25rem;
                 }
             `
         }
