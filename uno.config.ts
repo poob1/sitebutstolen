@@ -50,6 +50,19 @@ export default defineConfig({
                     padding: 0.1rem;
                     font-family: ${theme.fontFamily.mono} !important;
                 }
+
+                table,thead {
+                    border-collapse: unset !important;
+                    background-color: ${theme.colors.crust};
+                    padding: 0.25rem !important;
+                    border-radius: 0.375rem;
+                    text-align: center;
+                }
+
+                th,td,tr {
+                    background-color: ${theme.colors.mantle};
+                    padding: 0.5rem;
+                }
             `
         }
     ],
