@@ -45,4 +45,13 @@ The version you are looking at! I am very proud of it, as it uses an amazing tec
 ## TODO
 
 * Write justification
-* Add version table
+
+| Version | First commit/source | Last/Latest commit | Summary |
+| ------- | ------------------- | ------------------ | ------- |
+| Legacy  | [Here](//github.com/Beefers/site/tree/legacy) | See source | HTML/CSS/JS, first dive into webdev. |
+| Version 1 | [Here](//rem-my-github-io-kp5pssc3h-rem-my.vercel.app/) | [Here](//site-git-v1-beefers.vercel.app/) | Direct port of Legacy to SvelteKit. |
+| Version 2 | [Here](//site-9zgoiir3s-rem-my.vercel.app/) | [Here](//site-git-v2-beefers.vercel.app/) | Explored "advanced" CSS styling, written with SvelteKit. |
+| Version 3 | [Here](//site-jlflzgxce-beefers.vercel.app/) | [Here](//site-git-v3-beefers.vercel.app/) | Dead within 6 commits. Used Svelte and Astro. |
+| Version 4 | [Here](//site-jh5zqygpw-beefers.vercel.app/) | [Here](//site-git-v4-beefers.vercel.app/) | Started to take webdev seriously, and wanted my own internet space. Written with SolidJS, WindiCSS and Vite. |
+| Version 5 | [Here](//site-avz3yew0y-beefers.vercel.app/) | [Here](//site-git-v5-beefers.vercel.app/) | Supposed to be the rewrite to end all rewrites - look how that went... Written with SolidJS, TypeScript, WindiCSS and Vite. |
+| Version 6 | [Here](//site-3rajshmt5-beefers.vercel.app/) | [Here](//site-git-v6-beefers.vercel.app/) | The current version! Written with Astro, and styled using the Catppuccin colour scheme. |
