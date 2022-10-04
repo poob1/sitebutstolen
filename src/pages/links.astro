@@ -1,0 +1,18 @@
+---
+import AccountCard from "@/components/AccountCard.astro";
+import { Account } from "@/def";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const accounts: Account[] = [
+    {
+        platform: "Discord",
+        icon: "discord",
+        username: "Beef#5340",
+        url: "//discord.com/users/257109471589957632"
+    }
+];
+---
+
+<BaseLayout title="Links">
+    {accounts.map((account: Account) => <AccountCard account={account} href={account.url} /> )}
+</BaseLayout>

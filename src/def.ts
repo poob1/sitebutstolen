@@ -13,3 +13,10 @@ export interface Article {
     date: Date;
     tags: string[];
 }
+
+export interface Account {
+    platform: string;
+    username: string;
+    icon: string;
+    url: string;
+}

@@ -8,10 +8,6 @@ const articles = await Astro.glob<Article>("./*.md");
 
 <BaseLayout title="Articles">
     <main class="flex flex-col gap-4">
-        {articles.map((article) => function() {
-            return (
-                <ArticleCard article={article.frontmatter} href={article.url} />
-            )
-        })}
+        {articles.map((article) => <ArticleCard article={article.frontmatter} href={article.url} /> )}
     </main>
 </BaseLayout>
