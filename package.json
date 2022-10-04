@@ -9,16 +9,16 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@unocss/preset-wind": "^0.45.18",
-    "@unocss/transformer-variant-group": "^0.45.18",
-    "astro": "^1.2.1",
+    "@unocss/preset-wind": "^0.45.26",
+    "@unocss/transformer-variant-group": "^0.45.26",
+    "astro": "^1.4.4",
     "astro-uno": "^0.2.1",
-    "unocss": "^0.45.18",
+    "unocss": "^0.45.26",
     "unocss-preset-scrollbar": "^0.2.1",
-    "vite": "^3.1.0"
+    "vite": "^3.1.4"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.11.1",
+    "@astrojs/mdx": "^0.11.4",
     "astro-icon": "^0.7.3",
     "crossani": "^1.3.2"
   }
