@@ -17,6 +17,5 @@ export interface Article {
 export interface Account {
     platform: string;
     username: string;
-    icon: string;
-    url: string;
+    url?: string;
 }
