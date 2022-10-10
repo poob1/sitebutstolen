@@ -1,0 +1,27 @@
+---
+import { Project } from "@types";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+
+const featuredProjects: Project[] = [
+    {
+        name: "Coffee",
+        description: "My Discord bot.",
+        repo: "//github.com/Beefers/coffee",
+    },
+    {
+        name: "site",
+        description: "This website!",
+        repo: "//github.com/Beefers/site",
+    }
+];
+---
+
+<BaseLayout title="Projects">
+    <main>
+        <div class="flex flex-col gap-4">
+            {featuredProjects.map((project) => <ProjectCard project={project} href={project.repo} /> )}
+            <sub>This page is unfinished...</sub>
+        </div>
+    </main>
+</BaseLayout>

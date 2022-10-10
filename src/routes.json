@@ -10,6 +10,11 @@
         "icon": "round-person"
     },
     {
+        "name": "Projects",
+        "path": "/projects",
+        "icon": "round-code"
+    },
+    {
         "name": "Links",
         "path": "/links",
         "icon": "round-account-tree"

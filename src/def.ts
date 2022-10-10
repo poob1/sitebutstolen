@@ -19,3 +19,9 @@ export interface Account {
     username: string;
     url?: string;
 }
+
+export interface Project {
+    name: string;
+    description: string;
+    repo: string;
+}
