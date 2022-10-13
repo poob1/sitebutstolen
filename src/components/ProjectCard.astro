@@ -1,22 +1,23 @@
 ---
 import { Project } from "@types";
-import { Icon } from "astro-icon";
 import Card from "@components/Card.astro";
+import ProjectCardAttribute from "@components/ProjectCardAttribute.astro";
 
 export interface Props {
     project: Project;
     href?: string;
 }
 
-const { name, description } = Astro.props.project;
+const { full_name, description, language, stargazers_count } = Astro.props.project;
 const { href } = Astro.props;
 ---
 
 <Card href={href}>
-    <div class="flex flex-row gap-4 items-center">
-        <div>
-            <h1>{name}</h1>
-            <p>{description}</p>
-        </div>
+    <div>
+        <h1>{full_name}</h1>
+        <p>{description}</p>
+    </div>
+    <div class="flex flex-row gap-4">
+        <ProjectCardAttribute pack="akar-icons" icon="shipping-box-02" text={language || "Unknown Language"} />
     </div>
 </Card>
