@@ -21,16 +21,17 @@ export interface Account {
 }
 
 export interface Project {
-    full_name: string;
+    name: string;
     description: string;
     language?: string;
     stargazers_count: number;
+    updated_at: string;
     license?: {
         key: string,
         name: string,
         spdx_id: string,
         url: string,
         node_id: string
-      },
+    },
     html_url: string;
 }

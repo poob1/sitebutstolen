@@ -10,7 +10,7 @@ export interface Props {
 const { icon, pack, text } = Astro.props;
 ---
 
-<div class="flex flex-row gap-1 items-center">
+<div class="flex flex-row gap-1 items-center bg-base rounded-md p-2">
     <Icon class="w-4 h-4" pack={pack} name={icon} />
     <span>{text}</span>
 </div>
