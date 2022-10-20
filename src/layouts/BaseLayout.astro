@@ -32,7 +32,7 @@ const title = Astro.props.title ?? Astro.props.content.title;
 
         <slot name="head" />
 	</head>
-	<body class="font-inter bg-base text-text flex w-screen h-screen md:(flex-row) lt-md:(flex-col)">
+	<body class="font-inter bg-base text-text flex w-screen h-screen flex-col">
         <NavBar routes={routes} />
 		<span class={`p-4 h-screen w-screen overflow-y-auto scrollbar scrollbar-rounded scrollbar-track-color-mantle scrollbar-thumb-color-crust scrollbar-w-2 ${Astro.props.class}`}>
             <slot />

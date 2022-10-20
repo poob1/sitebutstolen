@@ -9,6 +9,6 @@ export interface Props {
 const { routes } = Astro.props;
 ---
 
-<div class="bg-mantle gap-2 p-2 flex md:(flex-col) lt-md:(flex-row sticky)">
-    {routes.map((route: PageRoute) => route.icon && <NavBarItem href={route.path} src={route.icon}/> )}
+<div class="bg-mantle p-2 flex flex-row justify-center md:(gap-4) lt-md:(gap-2)">
+    {routes.map((route: PageRoute) => route.icon && <NavBarItem name={route.name} href={route.path} src={route.icon}/> )}
 </div>

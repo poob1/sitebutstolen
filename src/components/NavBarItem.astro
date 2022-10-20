@@ -2,11 +2,12 @@
 import { Icon } from "astro-icon";
 
 export interface Props {
+    name: string;
 	href: string;
     src: string;
 }
 
-const { href, src } = Astro.props;
+const { name, href, src } = Astro.props;
 
 const currentPath = Astro.url.pathname;
 const fixedPath =
@@ -15,6 +16,7 @@ const fixedPath =
         : currentPath;
 ---
 
-<a href={href}>
-    <Icon class={`transition-opacity w-10 h-10 hover:(opacity-50) ${fixedPath === href ? "text-peach!" : ""}`} pack="ic" name={src} />
+<a href={href} class={`transition-opacity flex flex-row items-center gap-1 hover:(opacity-50) ${fixedPath === href ? "text-peach!" : ""}`}>
+    <Icon class="md:(w-8 h-8) lt-md:(w-10 h-10)" pack="ic" name={src} />
+    <span class="lt-md:(display-none)">{name}</span>
 </a>
