@@ -10,11 +10,9 @@ export interface Props {
 
 const { name, description, language, stargazers_count, updated_at, license } = Astro.props.project;
 const { href } = Astro.props;
-
-// TODO: Last update
 ---
 
-<Card href={href}>
+<Card href={href} newTab>
     <div class="flex flex-row p-[0.2rem] gap-1 whitespace-nowrap overflow-x-auto scrollbar scrollbar-rounded scrollbar-h-1 scrollbar-track-color-mantle scrollbar-thumb-color-crust">
         <ProjectCardAttribute pack="akar-icons" icon="shipping-box-02" text={language || "Unknown Language"} />
         <ProjectCardAttribute pack="ic" icon="round-linear-scale" text={license?.name || "Unlicensed"} />
