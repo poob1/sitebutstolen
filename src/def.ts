@@ -18,6 +18,7 @@ export interface Account {
     platform: string;
     username: string;
     url?: string;
+    rel?: string;
 }
 
 export interface Project {

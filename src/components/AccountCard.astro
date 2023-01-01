@@ -8,11 +8,11 @@ export interface Props {
     href?: string;
 }
 
-const { platform, username } = Astro.props.account;
+const { platform, username, rel } = Astro.props.account;
 const { href } = Astro.props;
 ---
 
-<Card href={href} newTab>
+<Card href={href} rel={rel} newTab>
     <div class="flex flex-row gap-4 items-center">
         <Icon class="w-16 h-16" pack="simple-icons" name={platform.toLowerCase().split(" ").join("")} />
         <div>

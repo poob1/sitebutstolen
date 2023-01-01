@@ -3,12 +3,13 @@ export interface Props {
     href?: string;
     class?: string;
     newTab?: boolean;
+    rel?: string;
 }
 
-const { href, newTab } = Astro.props;
+const { href, newTab, rel } = Astro.props;
 ---
 
-<a target={newTab ? "_blank" : "_self"} class="transition-unset! text-text! hover:(text-text!)" href={href}>
+<a rel={rel} target={newTab ? "_blank" : "_self"} class="transition-unset! text-text! hover:(text-text!)" href={href}>
     <div class={`transition-colors flex flex-col gap-2 bg-mantle p-4 rounded-lg border-2 border-transparent ${href ? "hover:(border-flamingo)" : ""} ${Astro.props.class}`}>
         <slot />
     </div>
